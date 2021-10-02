@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    
+}
+table td{
+    border:1px solid gray;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
