@@ -2,6 +2,7 @@ import React,{ useState } from 'react'
 import "./ticToc.css";
 
 const TicToc = () => {
+    
     const[turn,setTurn]= useState("X");
     const [cells,setCells]=useState(Array(9).fill(''));
     const[winner,setWinner]= useState();
@@ -68,10 +69,13 @@ const TicToc = () => {
     }
 
     return (
+        <div className="inf">
         <div className="container">
+            <h1 className="turn">
+                turn:{turn}
+            </h1> 
             <table>
                 <tbody>
-                    turn:{turn}
                     <tr>
                         <Cell num={0} />
                         <Cell num={1} />
@@ -91,10 +95,12 @@ const TicToc = () => {
             </table>
             {winner && (
                 <>
-                    <p>{winner} is the winner !</p>
-                    <button onClick={()=>handleRestart()}>Play Again</button> 
+                    <p className="winner">{winner} is the winner !</p>
+                    
                 </>
             )}
+            <button className="btn" onClick={()=>handleRestart()}>Play Again</button> 
+        </div>
         </div>
     )
 }

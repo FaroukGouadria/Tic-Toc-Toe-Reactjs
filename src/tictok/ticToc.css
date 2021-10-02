@@ -1,15 +1,65 @@
+body{
+    background: url('https://www.teahub.io/photos/full/361-3611543_videogame-pixel-background-animation-free-footage-hd-video.jpg');
+}
+.inf{
+    display: flex;
+   justify-content: center;
+}
 .container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
     align-items: center;
-    
+    color:white;
+    font-size: 50px;
+   
 }
 table td{
-    border:1px solid gray;
+    border:3px solid gray;
     height: 100px;
     width: 100px;
     cursor: pointer;
     text-align: center;
+    font-size: 40px;
+    color: white;
+}
+td:hover{
+    background-color: aquamarine;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    color: black;
+    font-size: 60px;
+    font-style: bold;
+}
+.turn:hover{
+    transition:3s ;
+    font-size: 70p;
+    color: red;
+}
+.btn{
+     padding: 10px 35px;
+     background-color: transparent;
+     border: 1px solid white;
+     outline: none;
+     transition: .8s ease-in-out;
+     color: white;
+     position: relative;
+     top: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.winner:hover{
+    transition: 1s;
+    transform: rotateZ(360deg);
+    color: greenyellow;
+    font-size: 50px;
+    font-weight: bold;
 }
